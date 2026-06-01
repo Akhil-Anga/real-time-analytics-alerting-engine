@@ -1,9 +1,9 @@
 require("dotenv").config();
 
 const { Kafka } = require("kafkajs");
-const { saveMetric } = require("./metricsRepository");
-const { evaluateAlerts } = require("./alertEngine");
-const { cacheLatestMetric } = require("./cacheService");
+const { saveMetric } = require("../repositories/metricsRepository");
+const { evaluateAlerts } = require("../services/alertEngine");
+const { cacheLatestMetric } = require("../services/cacheService");
 
 const kafka = new Kafka({
   clientId: "real-time-alerting-backend",

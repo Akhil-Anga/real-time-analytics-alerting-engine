@@ -2,7 +2,7 @@ const {
   findActiveAlert,
   createAlert,
   resolveAlert,
-} = require("./alertsRepository");
+} = require("../repositories/alertsRepository");
 
 const ALERT_RULES = [
   {

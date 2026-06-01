@@ -1,4 +1,4 @@
-const { redisClient } = require("./redisClient");
+const { redisClient } = require("../config/redisClient");
 
 async function getLatestMachines() {
   const keys = await redisClient.keys("machine:*:latest");

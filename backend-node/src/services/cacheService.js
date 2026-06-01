@@ -1,4 +1,4 @@
-const { redisClient } = require("./redisClient");
+const { redisClient } = require("../config/redisClient");
 
 async function cacheLatestMetric(metric) {
   const key = `machine:${metric.machineId}:latest`;

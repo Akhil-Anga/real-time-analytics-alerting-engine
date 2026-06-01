@@ -1,4 +1,4 @@
-const { getActiveAlerts } = require("./alertsRepository");
+const { getActiveAlerts } = require("../repositories/alertsRepository");
 
 async function fetchActiveAlerts() {
   return await getActiveAlerts();
